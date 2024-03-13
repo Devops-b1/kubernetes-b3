@@ -18,13 +18,13 @@ metadata:
   name: pod-svc
 spec:
   type: NodePort
-selector:
+  selector:
     app: pod
-ports:
-- protocol: TCP
-  port: 8090            #<serviceport>
-  targetPort: 8080
-  nodePort: 30032
+  ports:
+  - protocol: TCP
+    port: 8090            #<serviceport>
+    targetPort: 8080
+    nodePort: 30032
 
 
 
