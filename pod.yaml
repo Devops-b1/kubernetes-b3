@@ -24,7 +24,7 @@ spec:
   - protocol: TCP
     port: 8090            #<serviceport>
     targetPort: 8080
-    nodePort: 30032
+    nodePort: 30033
 
 
 
