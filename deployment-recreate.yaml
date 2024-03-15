@@ -4,7 +4,7 @@ metadata:
   name: deploy-recreate
 spec:
   strategy:
-    type: ReCreate
+    type: Recreate
   replicas: 4
   selector:
     matchLabels:
