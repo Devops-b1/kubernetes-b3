@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: maven-pod
+  namespace: project-2
+  labels:
+    app: maven-app
+spec:
+  containers:
+  - name: maven-container
+    image: devopspankaj9201/maven-web-app:1
+    ports:
+    - containerPort: 8080
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+      limits:
+        cpu: 500m
+        memory: 512Mi
+        
